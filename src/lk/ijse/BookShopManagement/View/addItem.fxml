@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="398.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagement.Controller.AddItemController">
+   <children>
+      <Label layoutX="158.0" layoutY="24.0" text="New Item">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtID" layoutX="99.0" layoutY="64.0" prefHeight="26.0" prefWidth="89.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDescription" focusColor="#828386" labelFloat="true" layoutX="40.0" layoutY="111.0" prefHeight="26.0" prefWidth="314.0" promptText="Enter Item Description">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="69.0" text="Item Id">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCategory" labelFloat="true" layoutX="40.0" layoutY="160.0" prefHeight="25.0" prefWidth="185.0" promptText="Select Category">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <JFXComboBox fx:id="cmbBrand" labelFloat="true" layoutX="40.0" layoutY="209.0" prefHeight="25.0" prefWidth="185.0" promptText="Select Brand">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="btnCancel" layoutX="55.0" layoutY="369.0" onAction="#clickCancel" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #F33627;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="206.0" layoutY="368.0" onAction="#clickSave" prefHeight="26.0" prefWidth="139.0" style="-fx-background-color: #0041eb;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtCostPrice" focusColor="#828386" labelFloat="true" layoutX="37.0" layoutY="257.0" onAction="#enterCostPrice" prefHeight="26.0" prefWidth="139.0" promptText="Cost Price">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSalePrice" focusColor="#828386" labelFloat="true" layoutX="215.0" layoutY="257.0" onAction="#enterSalePrice" prefHeight="26.0" prefWidth="139.0" promptText="Sale Price">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQty" focusColor="#828386" labelFloat="true" layoutX="37.0" layoutY="304.0" onAction="#enterQty" prefHeight="26.0" prefWidth="139.0" promptText="Qty">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

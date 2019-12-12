@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="719.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagement.Controller.SettingsController">
+   <children>
+      <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="34.0" layoutY="15.0">
+         <image>
+            <Image url="@../Assest/horizontal_settings_mixer_60px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="81.0" text="Add New Category">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="268.0" text="Add New Brand">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="29.0" layoutY="220.0" prefHeight="18.0" prefWidth="661.0" />
+      <JFXTextField fx:id="txtCatId" labelFloat="true" layoutX="50.0" layoutY="139.0" prefHeight="26.0" prefWidth="179.0" promptText="Category ID" unFocusColor="#6f6e6e">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCatName" labelFloat="true" layoutX="290.0" layoutY="139.0" onAction="#enterCatName" prefHeight="26.0" prefWidth="271.0" promptText="Category Name" unFocusColor="#6f6e6e">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBrandId" labelFloat="true" layoutX="54.0" layoutY="328.0" prefHeight="26.0" prefWidth="179.0" promptText="Brand ID" unFocusColor="#6f6e6e">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBrandName" labelFloat="true" layoutX="294.0" layoutY="328.0" onAction="#enterBrandName" prefHeight="26.0" prefWidth="271.0" promptText="Brand Name" unFocusColor="#6f6e6e">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddCat" layoutX="579.0" layoutY="139.0" onAction="#addNewCategoey" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #5BC0DE;" text="+Add" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAddBrand" layoutX="579.0" layoutY="328.0" onAction="#addNewBrand" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #5BC0DE;" text="+Add" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

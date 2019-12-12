@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCus" prefHeight="593.0" prefWidth="719.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagement.Controller.CustomersController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="29.0" layoutY="90.0" prefHeight="421.0" prefWidth="662.0" style="-fx-border-color: #0041eb;" stylesheets="@style/Tables.css">
+         <columns>
+            <TableColumn prefWidth="104.0" text="Customer ID" />
+            <TableColumn prefWidth="201.0" text="Customer Name" />
+            <TableColumn prefWidth="138.0" text="Contact" />
+            <TableColumn prefWidth="217.0" text="Address" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-view" />
+         </styleClass>
+      </TableView>
+      <JFXTextField fx:id="txtType" layoutX="233.0" layoutY="30.0" onKeyReleased="#searchCustomerKey" prefHeight="30.0" prefWidth="175.0" promptText="Enter here">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <ImageView fx:id="btnReload" fitHeight="33.0" fitWidth="50.0" layoutX="652.0" layoutY="29.0" onMouseClicked="#clickReload" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/synchronize_512px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="btnSearch" fitHeight="33.0" fitWidth="33.0" layoutX="453.0" layoutY="29.0" onMouseClicked="#clickSearch" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/search_52px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXComboBox fx:id="cmbSearchBy" labelFloat="true" layoutX="29.0" layoutY="33.0" onAction="#chooseType" prefHeight="25.0" prefWidth="156.0" promptText="Search by">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="btnUpdate" layoutX="557.0" layoutY="545.0" onAction="#updateCustomer" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #EEA239;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRemove" layoutX="397.0" layoutY="545.0" onAction="#removeCustomer" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #F33627;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="report" fitHeight="33.0" fitWidth="50.0" layoutX="22.0" layoutY="521.0" onMouseClicked="#clickReportBTN" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/sheet_of_paper_96px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

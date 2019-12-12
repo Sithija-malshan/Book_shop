@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.table-view .table-row-cell:filled:hover{
+    -fx-cursor:hand;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, white 0%, #1de9b6 50%, white 100%);
+}
+
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #76ff03  50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}
+

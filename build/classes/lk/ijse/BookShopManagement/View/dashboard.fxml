@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="905.0" style="-fx-background-color: #34C8BA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagement.Controller.DashboardController">
+   <children>
+      <JFXButton fx:id="btnCusOrder" layoutX="6.0" layoutY="250.0" onMouseClicked="#ClickCusOrder" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Customer Order" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnCustomer" layoutX="6.0" layoutY="288.0" onMouseClicked="#ClickCustomers" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnSupOrder" layoutX="6.0" layoutY="326.0" onMouseClicked="#ClickSupOrder" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Supplier Order" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <AnchorPane layoutX="7.0" layoutY="542.0" opacity="0.34" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: #31405A; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <ImageView fx:id="btnClose" fitHeight="44.0" fitWidth="39.0" layoutX="12.0" layoutY="545.0" onMouseClicked="#ClickClose" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/shutdown_48px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="btnLogout" fitHeight="33.0" fitWidth="33.0" layoutX="72.0" layoutY="548.0" onMouseClicked="#ClickLogout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/circled_left_64px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lblHours" layoutX="14.0" layoutY="18.0" prefHeight="100.0" prefWidth="86.0" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMinute" layoutX="109.0" layoutY="32.0" prefHeight="44.0" prefWidth="48.0" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="45.0" />
+         </font>
+      </Label>
+      <Separator layoutX="13.0" layoutY="126.0" prefHeight="3.0" prefWidth="155.0" />
+      <JFXButton fx:id="btnSupplier" layoutX="6.0" layoutY="364.0" onMouseClicked="#ClickSupplier" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Suppliers" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnStock" layoutX="7.0" layoutY="402.0" onMouseClicked="#ClickStock" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Stock" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnReport" layoutX="8.0" layoutY="442.0" onMouseClicked="#ClickReports" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Reports" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="btnSetting" layoutX="8.0" layoutY="481.0" onMouseClicked="#ClickSettings" prefHeight="33.0" prefWidth="166.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Settings" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="107.0" fitWidth="155.0" layoutX="12.0" layoutY="139.0">
+         <image>
+            <Image url="@../Assest/book%20house.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="131.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/info_64px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane fx:id="cusOrderPane" layoutX="182.0" layoutY="4.0" prefHeight="593.0" prefWidth="719.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <JFXTextField fx:id="txtSearchItem" labelFloat="true" layoutX="193.0" layoutY="118.0" onAction="#EnterItemCode" prefHeight="26.0" prefWidth="139.0" promptText="Search From Code">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></JFXTextField>
+            <Label fx:id="lblCusName" layoutX="336.0" layoutY="57.0" prefHeight="26.0" prefWidth="201.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtSearchCus" labelFloat="true" layoutX="193.0" layoutY="57.0" onAction="#EnterContact" prefHeight="26.0" prefWidth="139.0" promptText="Search From Contact">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></JFXTextField>
+            <Separator layoutX="18.0" layoutY="278.0" prefHeight="3.0" prefWidth="688.0" />
+            <JFXButton fx:id="btnRemove" layoutX="18.0" layoutY="486.0" onAction="#removeRow" prefHeight="3.0" prefWidth="48.0" style="-fx-background-color: #EEA239;" text="-" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtAmount" labelFloat="true" layoutX="393.0" layoutY="486.0" onAction="#enterPaidAmount" prefHeight="17.0" prefWidth="115.0" promptText="Paid Amount">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></JFXTextField>
+            <Label fx:id="lblTotal" layoutX="276.0" layoutY="491.0" prefHeight="16.0" prefWidth="86.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="222.0" layoutY="491.0" prefHeight="16.0" prefWidth="48.0" text="Total : ">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbCustomer" layoutX="38.0" layoutY="58.0" onAction="#ChooseCustomer" prefHeight="25.0" prefWidth="139.0" promptText="Select Customer">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <Separator layoutX="16.0" layoutY="104.0" prefHeight="3.0" prefWidth="688.0" />
+            <Label fx:id="lblOrderID" layoutX="28.0" layoutY="20.0" prefHeight="17.0" prefWidth="63.0" text="Order ID" textFill="#0041eb">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="604.0" layoutY="20.0" prefHeight="17.0" prefWidth="101.0" textFill="#0041eb">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnNewCus" layoutX="565.0" layoutY="58.0" onMouseClicked="#NewCustomer" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #5BC0DE;" text="+Add New" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbItem" layoutX="38.0" layoutY="119.0" onAction="#ChooseItem" prefHeight="25.0" prefWidth="139.0" promptText="Select Item">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <Label layoutX="38.0" layoutY="165.0" text="Description :">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="202.0" text="Unit Price :">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="241.0" text="Available Qty :">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDescription" layoutX="144.0" layoutY="165.0" prefHeight="17.0" prefWidth="232.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUnitPrice" layoutX="144.0" layoutY="202.0" prefHeight="17.0" prefWidth="115.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblQtyonHand" layoutX="144.0" layoutY="241.0" prefHeight="17.0" prefWidth="115.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtDiscount" labelFloat="true" layoutX="518.0" layoutY="161.0" onAction="#EnterDiscount" prefHeight="26.0" prefWidth="94.0" promptText="Discount %">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="518.0" layoutY="219.0" onAction="#EnterQty" prefHeight="26.0" prefWidth="94.0" promptText="Qty">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <TableView fx:id="tblCusOrder" layoutX="18.0" layoutY="290.0" prefHeight="180.0" prefWidth="688.0" style="-fx-border-color: #0041eb;" stylesheets="@style/Tables.css">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Item Code" />
+                <TableColumn prefWidth="216.0" text="Description" />
+                  <TableColumn prefWidth="93.0" text="Unit Price" />
+                  <TableColumn prefWidth="85.0" text="Qty" />
+                  <TableColumn prefWidth="102.0" text="Discount" />
+                  <TableColumn prefWidth="116.0" text="Total" />
+              </columns>
+               <styleClass>
+                  <String fx:value="table-cell" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="table-view" />
+               </styleClass>
+            </TableView>
+            <JFXButton fx:id="btnPlaceOrder" layoutX="565.0" layoutY="541.0" onMouseClicked="#PlaceOrder" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #0041eb;" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" layoutX="405.0" layoutY="541.0" onMouseClicked="#CancelOrder" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #F33627;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="565.0" layoutY="491.0" prefHeight="16.0" prefWidth="57.0" text="Balence :">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBalance" layoutX="635.0" layoutY="491.0" prefHeight="16.0" prefWidth="70.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#4d4d4d" />
+         </effect>
+      </AnchorPane>
+      <Label fx:id="lblSec" layoutX="112.0" layoutY="74.0" prefHeight="29.0" prefWidth="48.0" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font></Label>
+      <Separator layoutX="13.0" layoutY="13.0" prefHeight="3.0" prefWidth="155.0" />
+   </children>
+</AnchorPane>

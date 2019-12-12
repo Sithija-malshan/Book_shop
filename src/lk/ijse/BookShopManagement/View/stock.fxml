@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="719.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BookShopManagement.Controller.StockController">
+   <children>
+      <TableView fx:id="tblStock" layoutX="27.0" layoutY="98.0" prefHeight="419.0" prefWidth="662.0" style="-fx-border-color: #0041eb;" stylesheets="@style/Tables.css">
+         <columns>
+            <TableColumn prefWidth="101.0" text="Item ID" />
+            <TableColumn prefWidth="283.0" text="Description" />
+            <TableColumn prefWidth="152.0" text="Unit Price" />
+            <TableColumn prefWidth="124.0" text="Qty" />
+         </columns>
+         <styleClass>
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-view" />
+         </styleClass>
+      </TableView>
+      <JFXTextField fx:id="txtEnterHere" layoutX="231.0" layoutY="36.0" onKeyReleased="#searchCustomerKey" prefHeight="30.0" prefWidth="175.0" promptText="Enter here">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <ImageView fx:id="btnReload" fitHeight="33.0" fitWidth="50.0" layoutX="652.0" layoutY="35.0" onMouseClicked="#clickReload" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/synchronize_512px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="btnSearch" fitHeight="33.0" fitWidth="33.0" layoutX="430.0" layoutY="35.0" onMouseClicked="#clickSearch" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assest/search_52px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXComboBox fx:id="cmbSearchby" labelFloat="true" layoutX="27.0" layoutY="39.0" onAction="#selectType" prefHeight="25.0" prefWidth="175.0" promptText="Search by">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="btnNewItem" layoutX="491.0" layoutY="38.0" onMouseClicked="#NewItem" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #5BC0DE;" text="+Add New Item" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="556.0" layoutY="548.0" onAction="#updateItem" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #EEA239;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRemove" layoutX="396.0" layoutY="548.0" onAction="#removeItem" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #F33627;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
